@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %} 
+<html>
+<head>
+    
+    <title>FIRST</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <style>
+    .b{
+    background-image: url("static/images/b.png");
+    background-size: 300%;
+    font-family: "Times New Roman", Times, serif;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size:default;
+    color:51, 102, 255;
+    background-color:skyblue;
+    margin:auto;
+    padding:10px;
+   
+  }
+    </style>
+    {% block head %}
+    {% endblock %}
+    
+</head>
+<body class="b">
+    {% include 'includes/navbar.html' %}
+    <!--<div class="container"></div>-->
+   {% block body %}{% endblock %} 
+    </div>
+</body>
+</html>

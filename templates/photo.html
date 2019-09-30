@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+{% block body %}
+    <form action="take" method="POST" enctype="multipart/form-data">
+<center>
+    <pre></pre>
+    <h1>Fill the below details to upload your Item</h1>
+    <pre></pre>
+    Registered Username:<input type="text" placeholder="enter your user name" name="uname">
+    <br>
+    <pre></pre>
+    Registered Password:<input type="password" placeholder="enter your user password" name="password">
+    <br>
+    <pre></pre>
+    Name:<input type="text" placeholder="enter your  Name" name="name">
+    <br>
+    <pre></pre>
+    E-Mail<input type="email" placeholder="enter your E-Mail" name="e_mail">
+    <br>
+    <pre></pre>
+    Mobile:<input type="text" placeholder="enter your mobile number" name="phone">
+    <br>
+    <pre></pre>
+    Image:<input type="file"  name="img"/>
+    <br>
+    <pre></pre>
+    Name of Product:<input type="text" placeholder="Enter nane of the Product" name="name_of_product">
+    <br>
+    <pre></pre>
+    Description:<input type="text" placeholder="Enter the description " name="description">
+    <br>
+    <pre></pre>
+    <button class="btn btn-primary" type="submit" name="save">SAVE</button>
+    <br>
+    <pre></pre>
+    <button class="btn btn-primary" type="submit" name="delete">DELETE</button>
+    <br>
+    <pre></pre>
+    <button class="btn btn-primary" type="submit" name="show">SHOW</button>
+</center>
+</form>
+{% endblock %}
+
